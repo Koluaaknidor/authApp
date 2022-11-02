@@ -1,0 +1,22 @@
+###
+GET http://localhost:4000/posts
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6Ik5pY2siLCJlbWFpbCI6InR1cm5pa21hbml6ZUBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTY2Njk4MDQ4OSwiZXhwIjoxNjY2OTgwNTA5fQ.y_nyM0mmdYm1R31hmCywGn5O6D42EqgTLdX502iOih0
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "login": "Nick",
+  "pass": "qwerty",
+  "email": "turnikmanize@gmail.com"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "login": "Nick",
+  "pass": "qwerty"
+}
